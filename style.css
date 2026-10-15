@@ -1,0 +1,263 @@
+
+/* BASE DU SITE */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f8fc;
+    color: #202538;
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* MENU */
+
+.header {
+    min-height: 75px;
+    padding: 18px 8%;
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #e8eaf1;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo {
+    font-size: 23px;
+    font-weight: bold;
+    color: #3155c6;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+nav a {
+    font-size: 14px;
+    color: #454b5d;
+}
+
+nav a:hover {
+    color: #3155c6;
+}
+
+/* ACCUEIL */
+
+.accueil {
+    min-height: 560px;
+    padding: 110px 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: linear-gradient(135deg, #edf1ff, #f7f8fc);
+}
+
+.sous-titre {
+    color: #3155c6;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.accueil h1 {
+    font-size: clamp(32px, 5vw, 55px);
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
+.accueil h1 span {
+    color: #3155c6;
+}
+
+.accueil h2 {
+    font-size: 23px;
+    font-weight: normal;
+    margin-bottom: 18px;
+}
+
+.description {
+    max-width: 620px;
+    color: #62697b;
+    margin-bottom: 28px;
+}
+
+/* BOUTONS */
+
+.bouton {
+    display: inline-block;
+    padding: 13px 22px;
+    background: #3155c6;
+    color: white;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.bouton:hover {
+    background: #243f99;
+    transform: translateY(-2px);
+}
+
+/* SECTIONS */
+
+.section {
+    padding: 85px 8%;
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 22px;
+}
+
+.section > p:not(.sous-titre) {
+    max-width: 760px;
+    color: #62697b;
+}
+
+/* PROJETS */
+
+.projets {
+    background: white;
+}
+
+.grille-projets {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.carte {
+    background: #f7f8fc;
+    padding: 25px;
+    border: 1px solid #e6e9f2;
+    border-radius: 12px;
+    transition: 0.2s;
+}
+
+.carte:hover {
+    transform: translateY(-4px);
+    border-color: #b8c5f5;
+}
+
+.numero {
+    color: #3155c6;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.carte h3 {
+    margin: 12px 0;
+    font-size: 20px;
+}
+
+.carte p {
+    color: #62697b;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.etiquette {
+    display: inline-block;
+    background: #e8edff;
+    color: #3155c6;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+/* COMPÉTENCES */
+
+.competences {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+}
+
+.competences span {
+    background: white;
+    border: 1px solid #e0e4ef;
+    padding: 10px 16px;
+    border-radius: 7px;
+}
+
+.note {
+    margin-top: 20px;
+    font-size: 13px;
+}
+
+/* CONTACT */
+
+.contact {
+    background: #edf1ff;
+}
+
+.contact .bouton {
+    margin-top: 25px;
+}
+
+/* PIED DE PAGE */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background: #202538;
+    color: white;
+    font-size: 14px;
+}
+
+/* ADAPTATION AUX MOBILES */
+
+@media (max-width: 750px) {
+
+    .header {
+        justify-content: center;
+        padding: 18px 5%;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px 18px;
+    }
+
+    .accueil {
+        padding: 80px 6%;
+        min-height: 480px;
+    }
+
+    .section {
+        padding: 60px 6%;
+    }
+
+    .grille-projets {
+        grid-template-columns: 1fr;
+    }
+
+    .section h2 {
+        font-size: 28px;
+    }
+}
