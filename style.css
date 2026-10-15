@@ -1,4 +1,3 @@
-
 /* BASE DU SITE */
 
 * {
@@ -228,6 +227,14 @@ footer {
     background: #202538;
     color: white;
     font-size: 14px;
+}
+
+
+/* SECTION DIPLOMES */
+
+.intro-diplomes {
+    margin-bottom: 10px;
+    max-width: 760px;
 }
 
 /* ADAPTATION AUX MOBILES */
