@@ -142,19 +142,18 @@ nav a:hover {
     background: white;
 }
 
+
 .grille-projets {
     display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 22px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
     margin-top: 30px;
 }
 
 .carte {
-    background: #f7f8fc;
-    padding: 25px;
-    border: 1px solid #e6e9f2;
+    padding: 35px;
+    min-height: 250px;
     border-radius: 12px;
-    transition: 0.2s;
 }
 
 .carte:hover {
@@ -239,7 +238,11 @@ footer {
 
 /* ADAPTATION AUX MOBILES */
 
-@media (max-width: 750px) {
+
+@media (max-width: 700px) {
+    .grille-projets {
+        grid-template-columns: 1fr;
+    }
 
     .header {
         justify-content: center;
